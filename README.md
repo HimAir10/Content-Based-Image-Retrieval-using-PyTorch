@@ -1,1 +1,5 @@
 # Content-Based-Image-Retrieval-using-PyTorch
+Image Retrieval Based on a Hybrid Model of Deep Convolutional Encoder
+This project presents an effective hybrid deep learning model for content-based image retrieval (CBIR), designed to bridge the semantic gap in visual search tasks. The proposed approach integrates a 6-layer Convolutional Neural Network (CNN) with a 3-layer Autoencoder for high-level semantic feature extraction and dimensionality reduction, respectively. The CNN captures rich, abstract visual features, while the autoencoder compresses the 2048-dimensional vectors into compact 128-bit representations.
+
+To enable efficient large-scale retrieval, the compressed features are indexed using the Annoy (Approximate Nearest Neighbors Oh Yeah) algorithm, facilitating fast query matching via tree-based similarity search. The training utilizes the binary cross-entropy loss function, employing optimizers like Adadelta (MNIST) and Adam (CIFAR), with Batch Normalization and Dropout incorporated to improve generalization and convergence.
