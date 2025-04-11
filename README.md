@@ -11,10 +11,7 @@ This is our model Architecture which is used -
 I trained the model on Animal Dataset, you can get the dataset used by running this code- 
 
 import kagglehub
-
-# Download latest version
 path = kagglehub.dataset_download("theaayushbajaj/cbir-dataset")
-
 print("Path to dataset files:", path)
 
 
